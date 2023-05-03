@@ -27,6 +27,14 @@ return {
   {
     "iamcco/markdown-preview.nvim",
     ft = "markdown",
+    event = "VeryLazy",
     build = function() vim.fn["mkdp#util#install"]() end,
+  },
+  {
+    "barrett-ruth/live-server.nvim",
+    ft = "productivity",
+    event = "VeryLazy",
+    build = "yarn global add live-server",
+    config = true,
   },
 }

@@ -30,7 +30,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["q"] = false,                                                   -- Disables the record mode in vim
+    ["q"] = false, -- Disables the record mode in vim
     ["<leader>vs"] = { "<cmd>vsplit<cr>", desc = "Vertical split" }, -- Creates a virtual split for a selected file
     ["<S-h>"] = {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
@@ -40,6 +40,10 @@ return {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
     },
+    ["<leader>mp"] = { "<cmd>MarkdownPreview<cr>", desc = "Opens a markdown preview in a web browser window" },
+    ["<leader>ms"] = { "<cmd>MarkdownPreviewStop<cr>", desc = "Stops the markdown preview" },
+    ["<leader>ls"] = { "<cmd>LiveServerStart", desc = "Opens a live server for the current HTML file" },
+    ["<leader>lss"] = { "<cmd>LiveServerStop", desc = "Stops live server" },
   },
   t = {
     -- setting a mapping to false will disable it

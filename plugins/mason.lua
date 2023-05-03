@@ -11,6 +11,7 @@ return {
         "emmet_ls",
         "eslint",
         "html",
+        "jsonls",
         "lua_ls",
         "tailwindcss",
         "tsserver",
