@@ -24,6 +24,8 @@ sudo apt-get install ripgrep xclip
 
     2.2. Unzip and paste font files directly to `~./local/share/fonts`
 
+3. Build essential (Fixes some errors when opening files in nvim): `sudo apt-get install build-essential`
+
 #### Clone AstroNvim
 
 ```shell
