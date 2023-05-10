@@ -11,6 +11,12 @@ mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```
 
+#### Install extra tools for correct functioning
+
+1. Ripgrep: ```bashrc sudo apt-get install ripgrep```
+2. xClip: ```sudo apt-get instal xclip```
+3. Nerdfont ([FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FiraCode.zip)): After downloading this font, create a `.fonts` folder in / (home dir), downloaded font folder should be unziped.
+
 #### Clone AstroNvim
 
 ```shell
@@ -26,7 +32,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/EduardoV-dev/astronvim-config ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
