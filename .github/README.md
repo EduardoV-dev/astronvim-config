@@ -13,13 +13,16 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 
 #### Install extra tools for correct functioning
 
-1. Ripgrep: ```bashrc sudo apt-get install ripgrep```
-2. xClip: ```sudo apt-get instal xclip```
-3. Nerdfont: 
+1. Ripgrep and xClip: 
 
-    3.1. Download [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FiraCode.zip).
+```shell
+sudo apt-get install ripgrep xclip
+```
+2. Nerdfont: 
 
-    5.2. Unzip and paste font files directly to `~./local/share/fonts`
+    2.1. Download [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FiraCode.zip).
+
+    2.2. Unzip and paste font files directly to `~./local/share/fonts`
 
 #### Clone AstroNvim
 
