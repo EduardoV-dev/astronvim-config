@@ -8,6 +8,8 @@ return {
       ensure_installed = {
         "cssls",
         "cssmodules_ls",
+        "docker_compose_language_service",
+        "dockerls",
         "emmet_ls",
         "eslint",
         "html",
@@ -15,6 +17,7 @@ return {
         "lua_ls",
         "tailwindcss",
         "tsserver",
+        "yamlls",
       },
     },
   },

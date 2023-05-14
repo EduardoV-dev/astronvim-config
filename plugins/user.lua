@@ -37,4 +37,9 @@ return {
     build = "yarn global add live-server",
     config = true,
   },
+  {
+    "APZelos/blamer.nvim",
+    ft = "git tooling",
+    event = "VeryLazy",
+  },
 }
