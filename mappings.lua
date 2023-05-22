@@ -44,6 +44,7 @@ return {
     ["<leader>ms"] = { "<cmd>MarkdownPreviewStop<cr>", desc = "Stops the markdown preview" },
     ["<leader>ls"] = { "<cmd>LiveServerStart", desc = "Opens a live server for the current HTML file" },
     ["<leader>lss"] = { "<cmd>LiveServerStop", desc = "Stops live server" },
+    ["d"] = { '"_d', desc = "Avoids to copy text to clipboard when deleting lines" },
   },
   t = {
     -- setting a mapping to false will disable it
