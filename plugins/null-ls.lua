@@ -41,27 +41,38 @@ return {
           end,
         })
       end,
+      -- For eslint:
+      eslint = function()
+        require("null-ls").register(require("null-ls").builtins.diagnostics.eslint.with {
+          condition = function(utils)
+            return utils.root_has_file "package.json"
+              or utils.root_has_file ".eslintrc.json"
+              or utils.root_has_file ".eslintrc.js"
+              or utils.root_has_file ".eslintrc.cjs"
+          end,
+        })
+      end,
     }
 
     config.sources = {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
-      -- null_ls.builtins.formatting.prettier.with {
-      --   extra_args = {
-      --     "--allow-parens always",
-      --     "--no-bracket-same-line",
-      --     "--bracket-spacing",
-      --     "--end-of-line auto",
-      --     "--no-jsx-single-quote",
-      --     "--no-single-attribute-per-line",
-      --     "--print-width 100",
-      --     "--semi",
-      --     "--single-quote",
-      --     "--tab-width 4",
-      --     "--trailing-comma all",
-      --   },
-      -- },
+      null_ls.builtins.formatting.prettier.with {
+        extra_args = {
+          "--allow-parens always",
+          "--no-bracket-same-line",
+          "--bracket-spacing",
+          "--end-of-line auto",
+          "--no-jsx-single-quote",
+          "--no-single-attribute-per-line",
+          "--print-width 100",
+          "--semi",
+          "--tab-width 4",
+          "--trailing-comma all",
+        },
+        filetypes = { "astro", "mjs", "cjs", "svelte" },
+      },
     }
     return config -- return final config table
   end,

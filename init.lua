@@ -24,6 +24,12 @@ return {
   diagnostics = {
     virtual_text = true,
     lsp = {
+      config = {
+        eslint = function(opts)
+          opts.root_dir = require("lspconfig.util").root_pattern("package.json", ".eslintrc.json", ".eslintrc.js")
+          return opts
+        end,
+      },
       -- customize lsp formatting options
       formatting = {
         -- control auto formatting on save
@@ -77,13 +83,5 @@ return {
       --   },
       -- }
     end,
-  },
-  lsp = {
-    config = {
-      eslint = function(opts)
-        opts.root_dir = require("lspconfig.util").root_pattern("package.json", ".eslintrc.json", ".eslintrc.js")
-        return opts
-      end,
-    },
   },
 }

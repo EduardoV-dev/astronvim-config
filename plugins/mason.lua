@@ -6,15 +6,18 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
+        "astro",
         "cssls",
         "cssmodules_ls",
         "docker_compose_language_service",
         "dockerls",
         "emmet_ls",
         "eslint",
+        "gopls",
         "html",
         "jsonls",
         "lua_ls",
+        "svelte",
         "tailwindcss",
         "tsserver",
         "yamlls",
